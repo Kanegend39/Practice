@@ -13,27 +13,25 @@ class App(QMainWindow):
         self.pushButton.clicked.connect(self.draw)
 
     def draw(self):
-        mass = [self.radioButton_1.isChecked(), self.radioButton_2.isChecked(), self.radioButton_3.isChecked(),
-                self.radioButton_4.isChecked()]
-        match mass:
-            case list() if mass[0]:
-                dim = 1
-            case list() if mass[1]:
-                dim = 10 ** (-3)
-            case list() if mass[2]:
-                dim = 10 ** (-6)
-            case list() if mass[3]:
-                dim = 10 ** (-9)
         E0 = float(self.lineEdit_1.text())
-        wavelength = float(self.lineEdit_2.text()) * (10 ** -6)
+        wavelength = float(self.lineEdit_2.text())
         left = float(self.lineEdit_3.text())
         right = float(self.lineEdit_4.text())
         step = float(self.lineEdit_5.text())
-        self.grafik(E0, wavelength, left, right, step, dim)
+        rg = float(self.lineEdit_6.text())
+        dim = 10 ** (-6)
+        self.grafik(E0, wavelength, left, right, step, dim, int(rg))
 
-    def grafik(self, E0, wavelength, left, right, step, dim):
-        delta_l = np.arange(left, right, step)
-        plt.plot(delta_l * dim, 2 * (E0 ** 2) * np.cos(((4 * math.pi) / wavelength) * (delta_l * dim)))
+    def grafik(self, E0, wavelength, left, right, step, dim, rg):
+        delta_l = np.arange(left * wavelength, (right + step) * wavelength, step)
+        wavelength *= 10 ** (-6)
+        print(delta_l)
+        I = 0
+        for i in range(-rg, rg + 1):
+            E = (E0 ** 2) * (math.e ** (-(((i * (10 ** (-9))) ** 2)/(2 * (1 * 10 ** (-18))))))
+            I += E * (np.cos(((4 * math.pi) / (wavelength + (i * (10 ** (-9)))) * (delta_l * dim))))
+        print(I)
+        plt.plot(delta_l * dim, 2 * I)
         plt.show()
 
 

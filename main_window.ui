@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>656</width>
-    <height>489</height>
+    <width>669</width>
+    <height>507</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -83,7 +83,7 @@
      </font>
     </property>
     <property name="text">
-     <string/>
+     <string>1</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
@@ -101,7 +101,7 @@
      </font>
     </property>
     <property name="text">
-     <string/>
+     <string>1.31</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -178,7 +178,7 @@
    </widget>
    <widget class="QLineEdit" name="lineEdit_4">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -189,7 +189,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>1</string>
+     <string>300</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -219,82 +219,15 @@
       <height>31</height>
      </rect>
     </property>
-   </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>350</y>
-      <width>161</width>
-      <height>81</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
     <property name="text">
-     <string>Размерность Δl:</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton_1">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>380</y>
-      <width>82</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>метры</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton_2">
-    <property name="geometry">
-     <rect>
-      <x>260</x>
-      <y>380</y>
-      <width>91</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>миллиметры</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton_3">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>380</y>
-      <width>91</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>микрометры</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="radioButton_4">
-    <property name="geometry">
-     <rect>
-      <x>440</x>
-      <y>380</y>
-      <width>91</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>нанометры</string>
+     <string>0.001</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>410</y>
+      <x>10</x>
+      <y>420</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -305,7 +238,7 @@
    </widget>
    <widget class="QLineEdit" name="lineEdit_3">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -315,8 +248,78 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
     <property name="text">
-     <string>-1</string>
+     <string>-300</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_6">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>370</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>100</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>141</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Диапазон λ:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>340</y>
+      <width>41</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>нм</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>340</y>
+      <width>41</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>±</string>
     </property>
    </widget>
   </widget>
@@ -325,7 +328,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>656</width>
+     <width>669</width>
      <height>21</height>
     </rect>
    </property>
