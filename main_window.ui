@@ -189,7 +189,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>300</string>
+     <string>400</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -252,7 +252,7 @@
      <bool>true</bool>
     </property>
     <property name="text">
-     <string>-300</string>
+     <string>-400</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_6">
@@ -265,7 +265,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>100</string>
+     <string>40</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_9">
