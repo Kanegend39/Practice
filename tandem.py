@@ -24,12 +24,11 @@ class App(QMainWindow):
 
     def grafik(self, E0, wavelength, left, right, step, dim, rg):
         delta_l = np.arange(left * wavelength, (right + step) * wavelength, step)
-        delta_l2 = np.arange(left * wavelength, (right + step) * wavelength, step)
-        wavelength *= 10 ** (-6)
-        for i in range(len(delta_l)):
-            delta_l2[i] = 200.
+        X = np.linspace(-1, 1, len(delta_l))
+        delta_l2 = np.full(len(X), 200.0)
         print(delta_l)
         print(delta_l2)
+        wavelength *= 10 ** (-6)
         I = 0
         Q = 0
         for i in range(-rg, rg + 1):
