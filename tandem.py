@@ -16,7 +16,7 @@ k = (2 * math.pi) / lambda_
 print("Диапазон λ:", lambda_)
 I1 = 0
 for i in range(len(lambda_)):
-    E = (E0 ** 2) * (math.exp(-(((lambda_[i] - lambda0) ** 2) / (2 * ((2 * delta_lambda) ** 2)))))
+    E = (E0 ** 2) * (math.exp(-(((lambda_[i] - lambda0) ** 2) / (2 * (delta_lambda ** 2)))))
     I1 += 4 * E * (np.cos(k[i] * delta_l1) + np.cos(k[i] * delta_l2) + np.cos(k[i] * delta_l1) * np.cos(k[i] * delta_l2))
 print("Интенсивность:", I1)
 plt.plot(delta_l1, I1)
