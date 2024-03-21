@@ -24,16 +24,16 @@ for i in range(len(range_lambda)):
 I_new = np.abs(hilbert(I)) #преобразование Гильберта
 print("Интенсивность:", I)
 print("Интенсивность после преобразования Гильберта:", I_new)
-plt.plot(delta_l1, I)
-plt.plot(delta_l1, I_new)
+plt.plot(delta_l1, I) # синия линия
+plt.plot(delta_l1, I_new) # рыжая линия
 a = np.sqrt(I ** 2 + I_new ** 2) #амплитуда
 print(a)
 comp = np.arctan2(I_new, I)
 print("ωt + φ:", comp)
 approximated_line = np.polyfit(delta_l1, comp, 1)
 print("k и b прямой:", approximated_line)
-plt.plot(delta_l1, delta_l1 * approximated_line[0] + approximated_line[1])
-plt.plot(delta_l1, comp)
-plt.plot(delta_l1, comp - (delta_l1 * approximated_line[0] + approximated_line[1]))
+plt.plot(delta_l1, delta_l1 * approximated_line[0] + approximated_line[1]) # зеленая линия
+plt.plot(delta_l1, comp) # красная линия
+plt.plot(delta_l1, comp - (delta_l1 * approximated_line[0] + approximated_line[1])) # фиолетовая линия
 plt.show()
 
