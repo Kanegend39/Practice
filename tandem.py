@@ -16,7 +16,7 @@ k = (2 * math.pi) / range_lambda
 print("Диапазон λ:", range_lambda)
 I = 0
 for i in range(len(range_lambda)):
-    E = (E0 ** 2) * (math.exp(-(((range_lambda[i] - lambda0) ** 2) / (2 * (delta_lambda ** 2))))) #распределение Гаусса
+    E = (E0 ** 2) * (math.exp(-(((range_lambda[i] - lambda0) ** 2) / (2 * ((2 * delta_lambda) ** 2))))) #распределение Гаусса
     I += E * (4 * (np.cos(k[i] * delta_l1) + np.cos(k[i] * delta_l2)) + 2 * (np.cos(
         k[i] * (delta_l1 + delta_l2)) + np.cos(k[i] * (delta_l1 - delta_l2))))
 print("Интенсивность:", I)
