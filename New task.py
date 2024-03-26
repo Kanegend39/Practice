@@ -14,7 +14,8 @@ range_lambda = np.arange(lambda0 - 5 * delta_lambda, lambda0 + 5 * delta_lambda,
 delta_l1 = np.arange(left, right + step, step)
 k = (2 * math.pi) / range_lambda
 gamma = 10000
-b = lambda0 * 1e-2 * np.abs(np.cos(gamma * delta_l1))
+omega = 10
+b = lambda0 * 1e-2 * np.abs(np.cos(omega * delta_l1))
 print(b)
 delta_l2 = 200 * lambda0 + b * np.cos(gamma * delta_l1)
 print("Диапазон λ:", range_lambda)
