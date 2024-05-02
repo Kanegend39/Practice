@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1766</width>
+    <height>898</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="form1"/>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>871</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="form2"/>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>450</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="form3"/>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>490</y>
+     <width>871</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="form4"/>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>0</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_5">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>0</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="form5"/>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_6">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>40</y>
+     <width>871</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="form6"/>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

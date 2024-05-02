@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1677</width>
+    <height>905</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QTableWidget" name="table">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>0</y>
+     <width>621</width>
+     <height>901</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button1">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>830</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>load</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button2">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>830</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>grafik</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>830</y>
+     <width>391</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1041</width>
+     <height>631</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="form"/>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>291</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="form1"/>
+  </widget>
+  <widget class="QCheckBox" name="checkBox1">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>640</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>640</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>PLOT 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>680</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>PLOT 2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>720</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>PLOT 3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>760</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>PLOT 4</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox2">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>680</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox3">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>720</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox4">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>760</y>
+     <width>16</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox5">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>640</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="tristate">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>640</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Regain phase</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button3">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>830</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>680</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Remove noise</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox6">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>680</y>
+     <width>21</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="tristate">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
