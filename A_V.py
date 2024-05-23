@@ -12,5 +12,4 @@ def grafik_a_v():
             amplitude.append(min(new_delta_phi))
         else:
             amplitude.append(max(new_delta_phi))
-    print(amplitude)
     return U, amplitude

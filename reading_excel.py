@@ -57,6 +57,14 @@ def read(path):
     delta_phi = delta_phi[line - 200:line + 200]
     window = 20
     new_delta_phi = np.convolve(delta_phi, np.ones(window)/window, 'same')
+    adssa = 0
+    if max(new_delta_phi) < min(new_delta_phi):
+        adssa = min(new_delta_phi)
+    else:
+        adssa = max(new_delta_phi)
+    print(adssa, end=" ")
+    appr = np.polyfit(x, new_delta_phi, 1)
+    results = new_delta_phi - (appr[0] * x + appr[1])
     #print(delta_phi)
     #print(new_delta_phi)
     # plt.plot(x, grafik_1, color='white')
@@ -65,4 +73,4 @@ def read(path):
     #plt.plot(x, grafik_4, color='blue')
     #plt.plot(x, phi_4 - phi_3, color='violet')
     #plt.show()
-    return x1, grafik_1, grafik_2, grafik_3, grafik_4, delta_phi, new_delta_phi, x
+    return x1, grafik_1, grafik_2, grafik_3, grafik_4, delta_phi, results, x
